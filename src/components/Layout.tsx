@@ -1,7 +1,7 @@
 import { type ReactNode, useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
-import { ArrowUpRight, BookOpen, Instagram, Linkedin, Mail, Menu, X, Youtube } from 'lucide-react'
-import { links, navItems, socialLinks } from '../data/siteData'
+import { ArrowUpRight, Instagram, Linkedin, Mail, Menu, X, Youtube } from 'lucide-react'
+import { links, navItems, socialLinks, images } from '../data/siteData'
 
 const pageMeta: Record<string, { title: string; description: string }> = {
   '/': {
@@ -103,11 +103,13 @@ export function Layout() {
       }`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
           <Link to="/" className="group flex items-center gap-3" aria-label="Salman Muhammad Shoaib home">
-            <span className={`flex items-center justify-center rounded-full border border-slate-300/20 bg-white/95 text-[#071323] shadow-[0_0_35px_rgba(161,181,205,0.22)] transition-all duration-300 ${
-              isScrolled ? 'h-9 w-9' : 'h-10 w-10'
-            }`}>
-              <BookOpen className="h-5 w-5" />
-            </span>
+            <img
+              src={images.officialLogo}
+              alt="Salman Muhammad Shoaib Logo"
+              className={`object-contain transition-all duration-300 ${
+                isScrolled ? 'h-10 w-10' : 'h-12 w-12'
+              }`}
+            />
             <span className="leading-tight hidden sm:block">
               <span className={`block font-display font-semibold tracking-wide text-white transition-all duration-300 ${
                 isScrolled ? 'text-base' : 'text-lg'
@@ -181,9 +183,11 @@ export function Layout() {
           <div className="grid gap-10 lg:grid-cols-4">
             <div className="lg:col-span-1">
               <Link to="/" className="inline-flex items-center gap-3">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#071323]">
-                  <BookOpen className="h-5 w-5" />
-                </span>
+                <img
+                  src={images.officialLogo}
+                  alt="Salman Muhammad Shoaib Logo"
+                  className="h-12 w-12 object-contain"
+                />
                 <span className="font-display text-xl font-semibold text-white">Salman Muhammad Shoaib</span>
               </Link>
               <p className="mt-6 text-sm leading-7 text-slate-400">

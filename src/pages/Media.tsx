@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Calendar, ExternalLink } from 'lucide-react'
-import { images } from '../data/siteData'
+import { images, galleryImages } from '../data/siteData'
 
 const pressFeatures = [
   {
     publication: 'Estate Magazine',
-    headline: 'Salman Muhammad Shoaib Builds Trust Beyond Dubai',
+    headline: 'Salman Muhammad Shoaib Builds Trust Beyond Dubai Property Sales',
     summary: 'Feature article highlighting Salman\'s approach to building trust and credibility in Dubai\'s real estate market through education and transparency.',
     date: '2026',
     image: images.mediaFeature,
@@ -20,6 +20,15 @@ const pressFeatures = [
     image: images.mediaGulfPress,
     url: 'https://gulfpress.net/real-estate/the-story-behind-dubai-real-estate-beyond-headlines-salman-muhammad-shoaibs-mission-to-educate-investors/',
     buttonText: 'Read Full Feature',
+  },
+  {
+    publication: 'CoverGenix',
+    headline: 'Why Context Matters More Than Headlines: Salman Muhammad Shoaib on Smarter Dubai Property Decisions',
+    summary: 'Comprehensive interview discussing the importance of market context, data-driven decisions, and long-term investment strategy in Dubai real estate.',
+    date: 'July 30, 2026',
+    image: images.covergenix,
+    url: '#', // TODO: Add CoverGenix article URL when available
+    buttonText: 'Read Full Article',
   },
 ]
 
@@ -43,12 +52,12 @@ const speakingEvents = [
     buttonText: 'View LinkedIn Feature',
   },
   {
-    title: 'Real Estate Training Session',
-    summary: 'Professional training session for real estate professionals focused on market fundamentals and advisory skills.',
+    title: 'Aarika Real Estate Open House',
+    summary: 'Client meeting during an Aarika Real Estate open house, discussing property information and documents with prospective buyers.',
     date: '2026',
-    image: images.mediaEvent,
+    image: images.clientMeeting,
     url: '#',
-    buttonText: 'View Event',
+    buttonText: 'View Photo',
   },
 ]
 
@@ -204,10 +213,10 @@ export function Media() {
           <div className="max-w-3xl">
             <p className="section-kicker text-[#35506e]">Speaking & events</p>
             <h2 className="mt-4 font-display text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
-              Speaking engagements and training events
+              Speaking engagements and client meetings
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              Professional speaking appearances, training sessions and industry events focused on investor education and real estate professional development.
+              Professional speaking appearances, client meetings and industry events focused on investor education and real estate professional development.
             </p>
           </div>
 
@@ -254,8 +263,45 @@ export function Media() {
       </section>
 
       <section className="bg-white px-5 py-20 text-[#071323] sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="section-kicker text-[#35506e]">Professional gallery</p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
+              Professional moments and achievements
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-slate-700">
+              A curated collection of professional photographs highlighting speaking engagements, authorship, business partnerships, open houses, deal closings and achievements.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {galleryImages.map((img, index) => (
+              <div 
+                key={index}
+                className={`overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-sm transition hover:shadow-md ${
+                  img.priority === 'high' ? 'sm:col-span-2 lg:col-span-1' : ''
+                }`}
+              >
+                <div className="aspect-[4/5] overflow-hidden bg-[#f8fafc]">
+                  <img 
+                    src={img.src} 
+                    alt={img.alt} 
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm font-semibold text-[#071323]">{img.caption}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f8fb] px-5 py-20 text-[#071323] sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-[2.5rem] bg-[#f6f8fb] p-8 lg:p-12">
+          <div className="rounded-[2.5rem] bg-white p-8 lg:p-12">
             <h2 className="font-display text-3xl font-semibold sm:text-4xl">
               Looking for media assets or speaking engagements?
             </h2>

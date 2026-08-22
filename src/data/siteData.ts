@@ -16,6 +16,7 @@ export const links = {
 
 export const images = {
   logo: '/images/salman-logo.webp',
+  officialLogo: '/images/salman-shoaib-official-logo.PNG',
   hero: '/images/salman-hero.webp',
   training: '/images/salman-training.webp',
   about: '/images/salman-about-uploaded.webp',
@@ -23,12 +24,20 @@ export const images = {
   aboutFeature: '/images/about-feature.webp',
   bookCover: '/images/book-cover.webp',
   bookScene: '/images/book-scene.webp',
-  bookPortrait: '/images/book-portrait.webp',
+  bookPortrait: '/images/salman-shoaib-dubai-real-estate-book-portrait.PNG',
   mediaPortrait: '/images/media-salman-22.webp',
   mediaEvent: '/images/media-event.webp',
-  mediaFeature: '/images/media-feature-original.png',
+  mediaFeature: '/images/estate-magazine-salman-shoaib-feature.PNG',
   mediaGulfPress: '/images/media-gulf-press-original.jpg',
   mediaSquare: '/images/media-square-original.jpg',
+  clientMeeting: '/images/salman-shoaib-client-meeting-at-open-house.jpg',
+  covergenix: '/images/covergenix-salman-shoaib-media-feature.jpg',
+  speakingForum: '/images/salman-shoaib-speaking-at-business-forum.PNG',
+  authorOffice: '/images/salman-shoaib-author-with-book-office.PNG',
+  partnership: '/images/salman-shoaib-business-partnership-recognition.jpg',
+  openHouse: '/images/salman-shoaib-aarika-real-estate-open-house.jpg',
+  dealClosing: '/images/salman-shoaib-real-estate-deal-closing.jpg',
+  salesAchievement: '/images/salman-shoaib-sales-achievement-recognition.jpg',
 }
 
 export const navItems = [
@@ -366,7 +375,7 @@ export const mediaItems = [
   {
     title: 'Estate Magazine Feature',
     description:
-      'Salman Muhammad Shoaib Builds Trust Beyond Dubai - A feature on Salman\'s approach to building trust and credibility in Dubai\'s real estate market.',
+      'Salman Muhammad Shoaib Builds Trust Beyond Dubai Property Sales - A feature on Salman\'s approach to building trust and credibility in Dubai\'s real estate market.',
     image: images.mediaFeature,
     type: 'Press feature',
     url: 'https://estatemagazine.ae/salman-muhammad-shoaib-builds-trust-beyond-dubai/',
@@ -380,20 +389,21 @@ export const mediaItems = [
     url: 'https://gulfpress.net/real-estate/the-story-behind-dubai-real-estate-beyond-headlines-salman-muhammad-shoaibs-mission-to-educate-investors/',
   },
   {
+    title: 'CoverGenix Feature',
+    description:
+      'Why Context Matters More Than Headlines: Salman Muhammad Shoaib on Smarter Dubai Property Decisions.',
+    image: images.covergenix,
+    type: 'Press feature',
+    date: 'July 30, 2026',
+    url: '#', // TODO: Add CoverGenix article URL when available
+  },
+  {
     title: 'The Leaders - LinkedIn Recognition',
     description:
       'Recognition by The World Leaders on LinkedIn for driving real estate excellence and professional leadership.',
     image: images.mediaSquare,
     type: 'Leadership Recognition',
     url: 'https://www.linkedin.com/posts/the-world-leaders_salman-muhammad-shoaib-driving-real-estate-activity-7486345626541211648-SSNY',
-  },
-  {
-    title: 'Speaking & Event Gallery',
-    description:
-      'Authentic event and professional photographs used to support media, speaking and training enquiries.',
-    image: images.mediaEvent,
-    type: 'Event photography',
-    url: '',
   },
 ]
 
@@ -403,4 +413,43 @@ export const contactOptions = [
   'Training requests',
   'Media enquiries',
   'Professional collaborations',
+]
+
+export const galleryImages = [
+  {
+    src: images.speakingForum,
+    alt: 'Salman Muhammad Shoaib speaking at business forum',
+    caption: 'Speaking at Business Forum',
+    priority: 'high',
+  },
+  {
+    src: images.authorOffice,
+    alt: 'Salman Muhammad Shoaib author photograph in office',
+    caption: 'Author Portrait',
+    priority: 'medium',
+  },
+  {
+    src: images.dealClosing,
+    alt: 'Salman Muhammad Shoaib at real estate deal closing',
+    caption: 'Successful Deal Closing',
+    priority: 'medium',
+  },
+  {
+    src: images.partnership,
+    alt: 'Salman Muhammad Shoaib business partnership recognition',
+    caption: 'Business Partnership Recognition',
+    priority: 'medium',
+  },
+  {
+    src: images.openHouse,
+    alt: 'Salman Muhammad Shoaib at Aarika Real Estate open house',
+    caption: 'Aarika Real Estate Open House',
+    priority: 'medium',
+  },
+  {
+    src: images.salesAchievement,
+    alt: 'Salman Muhammad Shoaib sales achievement recognition',
+    caption: 'Sales Achievement Recognition',
+    priority: 'medium',
+  },
 ]
