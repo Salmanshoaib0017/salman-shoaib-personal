@@ -104,7 +104,7 @@ export function Layout() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
           <Link to="/" className="group flex items-center gap-3" aria-label="Salman Muhammad Shoaib home">
             <img
-              src={images.officialLogo}
+              src={images.transparentLogo}
               alt="Salman Muhammad Shoaib Logo"
               className={`object-contain transition-all duration-300 ${
                 isScrolled ? 'h-10 w-10' : 'h-12 w-12'

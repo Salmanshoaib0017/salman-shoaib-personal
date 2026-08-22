@@ -22,6 +22,15 @@ const pressFeatures = [
     buttonText: 'Read Full Feature',
   },
   {
+    publication: 'Hindustan Today',
+    headline: 'Beyond the Headlines: Salman Muhammad Shoaib\'s Framework',
+    summary: 'In-depth feature exploring Salman\'s strategic framework for Dubai real estate investment and market analysis.',
+    date: '2026',
+    image: images.hindustanToday,
+    url: 'https://hindustantoday.co.in/beyond-the-headlines-salman-muhammad-shoaibs-framework/',
+    buttonText: 'Read Full Article',
+  },
+  {
     publication: 'CoverGenix',
     headline: 'Why Context Matters More Than Headlines: Salman Muhammad Shoaib on Smarter Dubai Property Decisions',
     summary: 'Comprehensive interview discussing the importance of market context, data-driven decisions, and long-term investment strategy in Dubai real estate.',

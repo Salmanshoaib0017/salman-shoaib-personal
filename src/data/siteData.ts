@@ -17,6 +17,7 @@ export const links = {
 export const images = {
   logo: '/images/salman-logo.webp',
   officialLogo: '/images/salman-shoaib-official-logo.PNG',
+  transparentLogo: '/images/salman-shoaib-logo-transparent.PNG',
   hero: '/images/salman-hero.webp',
   training: '/images/salman-training.webp',
   about: '/images/salman-about-uploaded.webp',
@@ -32,6 +33,7 @@ export const images = {
   mediaSquare: '/images/media-square-original.jpg',
   clientMeeting: '/images/salman-shoaib-client-meeting-at-open-house.jpg',
   covergenix: '/images/covergenix-salman-shoaib-media-feature.jpg',
+  hindustanToday: '/images/hindustan-today-salman-shoaib-media-feature.jpg',
   speakingForum: '/images/salman-shoaib-speaking-at-business-forum.PNG',
   authorOffice: '/images/salman-shoaib-author-with-book-office.PNG',
   partnership: '/images/salman-shoaib-business-partnership-recognition.jpg',
