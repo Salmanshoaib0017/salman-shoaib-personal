@@ -30,15 +30,6 @@ const pressFeatures = [
     url: 'https://hindustantoday.co.in/beyond-the-headlines-salman-muhammad-shoaibs-framework/',
     buttonText: 'Read Full Article',
   },
-  {
-    publication: 'CoverGenix',
-    headline: 'Why Context Matters More Than Headlines: Salman Muhammad Shoaib on Smarter Dubai Property Decisions',
-    summary: 'Comprehensive interview discussing the importance of market context, data-driven decisions, and long-term investment strategy in Dubai real estate.',
-    date: 'July 30, 2026',
-    image: images.covergenix,
-    url: '#', // TODO: Add CoverGenix article URL when available
-    buttonText: 'Read Full Article',
-  },
 ]
 
 const interviewsVideos = [
@@ -295,7 +286,7 @@ export function Media() {
                   <img 
                     src={img.src} 
                     alt={img.alt} 
-                    className="h-full w-full object-cover"
+                    className={`h-full w-full ${img.fit === 'contain' ? 'object-contain' : 'object-cover'}`}
                     loading="lazy"
                   />
                 </div>

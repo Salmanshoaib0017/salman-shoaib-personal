@@ -441,6 +441,7 @@ export const galleryImages = [
     alt: 'Salman Muhammad Shoaib business partnership recognition',
     caption: 'Business Partnership Recognition',
     priority: 'medium',
+    fit: 'contain',
   },
   {
     src: images.openHouse,
